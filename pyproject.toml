@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sped-analyzer"
+version = "0.1.0"
+description = "Ferramenta de análise SPED"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "pandas>=2.0",
+]
+
+[project.scripts]
+sped-analyzer = "sped_analyzer.main:main"
