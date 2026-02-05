@@ -24,6 +24,7 @@ def verify_requirements():
     if libraries is None:
         messagebox.showwarning(
             "Aviso", "Arquivo 'requirements.txt' não encontrado ou vazio.")
+        return False
     elif not _check_and_install_libs(libraries):
         messagebox.showerror(
             "Erro", "Falha ao instalar/atualizar bibliotecas.")
@@ -93,7 +94,8 @@ def main():
     root = tk.Tk()
     root.withdraw()
     root.attributes("-topmost", True)
-    if not verify_requirements():
+
+    if verify_requirements() == False:
         messagebox.showerror("Erro", "Consulte o desenvolvedor.", parent=root)
         sys.exit(1)
     else:
