@@ -1,7 +1,7 @@
 import re
 from tkinter import messagebox, filedialog
-from verifier import main as verifier_main
-from ..registers import alphanumeric_blocks, numeric_blocks
+from registers import alphanumeric_blocks, numeric_blocks
+from sped_analyzer.verifier import main as verifier_main
 
 
 def start():
