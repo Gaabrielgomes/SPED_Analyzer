@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "sped-analyzer"
 version = "0.1.0"
-description = "Ferramenta de análise SPED"
+description = "SPED file analysis program"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
